@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>story</title>
+    <style type="text/css">
+        img {
+            position: relative;
+            width: 80px;
+            height: 80px;
+
+        }
+
+        * {
+            font-family: Helvetica;
+        }
+
+        h1,
+        h4 {
+            margin: 0px auto;
+            padding: 1px 9px;
+        }
+
+        ::placeholder {
+            color: white;
+        }
+        input, option, select,button{
+			width: 200px;
+			position: relative;
+			text-align: center;
+			outline : none;
+			
+			/*border: #2B60DE;*/
+			border:none;
+			border-bottom: solid white;
+			background-color: #2B60DE;
+			padding: 25px 20%;
+			color:  white;
+			font-size: 18px
+			
+
+		}
+
+        #top {
+            display: flex;
+            flex-direction: column;
+            margin: 22px 35px;
+            justify-content: center;
+            font-size: 24px;
+            text-align: center;
+            background-color: #c4c5cd;
+            border-radius: 14px;
+            padding: 20px 12px;
+        }
+
+
+
+
+        .container {
+            background-color: #2B60DE;
+            display: flex;
+            flex-direction: column;
+
+            border-radius: 14px;
+            align-items: center;
+            margin: auto 35px;
+            padding: 25px 205px;
+            text-align: center;
+        }
+
+        #btn {
+
+            display: block;
+            margin: 20px auto;
+            padding: 19px 9px;
+            border-radius: 8px;
+            width: 50%;
+            background-color: #2B60DE;
+
+
+        }
+        a{
+            color: white;
+	text-decoration: none;
+}
+
+a:hover{
+            color: black;
+	text-decoration: none;
+}
+
+        h4 {
+            color: black;
+        }
+
+        #btn:hover {
+            margin: 20px auto;
+            background-color: white;
+            border: 1px solid #2B60DE;
+            border-radius: 8px;
+            padding: 19px 9px;
+            color: black;
+
+        }
+
+        footer {
+
+            text-align: center;
+            color: #2B60DE;
+            padding: 12px 25px;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <div id="top">
+
+        <center> <img src="https://anmolverma01.github.io/story/logobook.png" alt="form a story picture"></center>
+        <div class="mainhead">
+            <h1>Make-Story</h1>
+        </div>
+
+        <div class="mainhead">
+            <h4>Fill your dream characters</h4>
+
+        </div>
+    </div>
+
+
+
+
+    <section class="container">
+
+        <span>
+        </span><br>
+
+        <center>Motivational Quote</center>
+        <h2></h2>
+    </section>
+    <button id="btn" type="button" name="btn" ><a href="index.html">Rebuild story</a></button>
+
+    <footer> &copy All rights reserved with <font color="black">&nbsp;DESIGH PVT. LTD</font>
+    </footer>
+    <script>
+
+        var data = localStorage.getItem("story").split(",");
+        console.log(data);
+        var story = "A <b>" + data[0] + "</b> was making fun of the <b>" + data[2] + "</b> one day for being so slow. \"Do you ever get anywhere?\" he asked with a mocking laugh.\" <b>" + data[2]+ "</b>,\" replied the <b>" + data[1]+ "</b>, \" but I get there <b>" +data[6]+"</b> than you think. I'll run you a race and prove it.\"The <b>" + data[0] + "</b> was much <b>"+data[3]+"</b> at the idea of running a race with the <b>" +data[1]+"</b>, but for the fun of the thing he agreed. So the <b>"+ data[2] + "</b>, who had consented to act as judge, marked the distance yelled, <b>\"" +data[7] +"\"</b>. The <b>"+ data[0] + "</b> was soon far out of sight, and to make the <b>"+data[1]+"</b> feel very deeply how ridiculous it was for him to try a race with a <b>"+data[0]+"</b>, he went off the course to practice <b>"+data[4]+"</b> for <b>"+data[5]+"</b> hours until the <b>"+ data[1]+"</b> should catch up.The <b>"+ data[1]+ "</b> meanwhile kept going slowly but steadily, and, after a time, passed the place where the <b>"+data[0]+"</b> was <b>"+data[4]+".</b> The <b>"+data[0]+"</b> was so caught up in <b>"+data[4]+"</b>, and when at last he did stop, the <b>"+data[1]+"</b> was near the goal. The <b>"+data[0]+"</b> now ran his swiftest, but he could not overtake the <b>"+ data[1]+"</b> in time."
+           document.querySelector("span").innerHTML = story;
+        document.querySelector("h2").textContent = data[8];
+
+
+
+        let btn=document.getElementById(btn);
+        btn.click.setAttribute("href","index.html");
+
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- A null was making fun of the null one day for being so slow.
+
+"Do you ever get anywhere?" he asked with a mocking laugh.
+
+"null," replied the null, "but I get there null than you think. I'll run you a race and prove it."
+
+The null was much null at the idea of running a race with the null, but for the fun of the thing he agreed. So the null, who had consented to act as judge, marked the distance yelled, "null".
+
+The null was soon far out of sight, and to make the null feel very deeply how ridiculous it was for him to try a race with a null, he went off the course to practice null for null hours until the null should catch up.
+
+The null meanwhile kept going slowly but steadily, and, after a time, passed the place where the null was null. The null was so caught up in null; and when at last he did stop, the null was near the goal. The null now ran his swiftest, but he could not overtake the null in time. -->
